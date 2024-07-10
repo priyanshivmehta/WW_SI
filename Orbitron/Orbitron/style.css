@@ -1,0 +1,320 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#myDiv {
+    display: none;
+}
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+body{
+    height:100vh;
+    background-color: black;
+}
+li{
+   list-style: none; 
+}
+.logo{
+    height:180px;
+    width:180px;
+    display:flex;
+    margin-right:20px;
+    margin-top:0.2rem;
+}
+
+#tabs{
+    text-decoration:none;
+    color:white;
+    font-size:1.25rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing:0.12rem;
+}
+#tabs:hover::after{
+    content:'';
+    width:0%;
+    height:1px;
+    display:block;
+    background:white;
+    margin:auto;
+    transition-duration: 0.3s;
+}
+#tabs:hover::after{
+    width:100%;
+}
+
+header{
+    position:relative;
+    padding:0 2rem;
+}
+.navbar{
+    
+    width:100%;
+    height:100px;
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:0.06rem;
+}
+.links{
+    display:flex;
+    gap:2rem;
+    margin-right:15rem;
+}
+.toggle_btn{
+    display:none;
+    cursor:pointer;
+    height:30px;
+    width:30px;
+
+}
+
+.dropdown_menu{
+    display:none;
+    position:absolute;
+    right:2rem;
+    top:60px;
+    height:0px;
+    width:300px;
+    background:rgb(68, 66, 66);
+    overflow:hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+ #tabs:hover{
+    color:rgb(138, 189, 234);
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+.dropdown_menu.open{
+    height:240px;
+}
+.dropdown_menu li{
+    font-size:35px;
+    padding:0.7rem;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.dropdown_menu{
+    z-index:1;
+    width:100%;
+    justify-content: center;
+}
+
+/* RESPONSIVE */
+@media(max-width:1101px){
+    .navbar .links{
+        display:none;
+    }
+    .navbar .toggle_btn{
+        display:block;
+    }
+    .dropdown_menu{
+        display:block;
+    }
+}
+@media(max-width:1101px){
+    .dropdown_menu{
+        left:2rem;
+        width:unset;
+    }
+}
+#images{
+    right: 0;
+    bottom: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+.container {
+    position: relative;
+    color: white;
+  }
+.bottom-left {
+    font-size: 24px;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color:white;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing:0.11rem
+  }
+#myVideo {
+    right: 0;
+    bottom: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .content {
+    bottom: 0;
+    font-family: "Bebas Neue", sans-serif;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    background:none;
+    cursor: pointer;
+  }
+  #credits{
+    float:right;
+    font-size:15px;
+    margin-bottom:10px;
+  }
+  #knowmore{
+    margin-top:2rem;
+    color:white;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+    padding:10px 57px 10px 50px;
+    width:20px;
+    border:1px solid white;
+  }
+  #knowmore:hover{
+    background: #ddd;
+    color:black;
+    transition-duration:0.3s;
+  }
+  .button1{
+    margin-bottom:5rem;
+  }
+  #footer1{
+    border-top:2px solid white;
+    bottom:0;
+    padding-left:150px;
+    margin-top:150px;
+  }
+  .footerlist{
+    display:inline-block;
+    font-family: "Bebas Neue", sans-serif; 
+    font-size:23px;
+    bottom:0;
+    padding-right:80px;
+    color:white;
+    text-decoration:none;
+  }
+  #hoverfooter{
+    color:white;
+  }
+  #hoverfooter:hover{
+    color:rgb(138, 189, 234);
+    transition-duration: 0.3s;
+  }
+  #subtopic{
+    height:100px;
+    color:white;
+    font-family: "Bebas Neue", sans-serif; 
+    letter-spacing:0.11rem;
+    margin-left:10px;
+  }
+  #photo1{
+    height:100%;
+    width:100%;
+  }
+  #photo{
+    max-height: 100%;
+    max-width:100%;
+  }
+  #info{
+    margin-left:10px;
+    color:white;
+    font-family: "Bebas Neue", sans-serif; 
+    letter-spacing:0.11rem;
+    padding:10px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 10px 0;
+  font-family: "Bebas Neue", sans-serif; 
+  background-image:url('https://papers.co/wallpaper/papers.co-af06-3d-solar-system-dark-space-art-minimal-26-wallpaper.jpg');
+  background-position:center;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  border:1px solid white;
+  color: white;
+  padding: 1.75rem;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+.timeline-heading{
+  letter-spacing:0.11rem;
+   color:rgb(138, 189, 234);
+}
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-image:linear-gradient(45deg, white, rgb(138, 189, 234));
+    width: 2px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, white, rgb(138, 189, 234));
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+#font-style{
+  color:white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing:0.11rem;
+}
