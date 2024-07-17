@@ -40,7 +40,7 @@ li{
 
 #tabs{
     text-decoration:none;
-    color:white;
+    color:rgb(162, 202, 237);
     font-size:1.25rem;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing:0.12rem;
@@ -65,7 +65,7 @@ header{
 .navbar{
     position:fixed;
     top:0;
-    background:black;
+    background-color: black;
     width:100%;
     height:100px;
     display:flex;
@@ -106,7 +106,7 @@ header{
     transition-duration: 0.2s;
 }
 .dropdown_menu.open{
-    height:240px;
+    height:250px;
 }
 .dropdown_menu li{
     font-size:35px;
@@ -132,12 +132,49 @@ header{
     .dropdown_menu{
         display:block;
     }
+    #quescosmo{
+      width:80%;
+    }
 }
 @media(max-width:1282px){
     .dropdown_menu{
         left:2rem;
         width:unset;
     }
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.cosmotext{
+  color:white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing:0.11rem; 
+  margin-bottom:1rem;
+  padding:20px;
+}
+#quescosmo{
+  color:white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing:0.11rem; 
+  gap:2rem;
+  display:inline-block;
+  justify-content: center;
+  margin-left:50px;
+  padding:20px;
+  margin-top:50px;
+  border-top:0.5px solid grey;
+}
+
+#images1{
+  padding:50px;
+  right: 0;
+    bottom: 2rem;
+    max-width: 50%;
+    max-height: 50%;
 }
 #images{
     right: 0;
