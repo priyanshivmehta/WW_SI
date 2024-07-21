@@ -73,6 +73,7 @@ header{
     justify-content:space-between;
     margin-bottom:0.06rem;
     z-index:1;
+    box-shadow: 0 8px 16px 0 rgba(167, 162, 162, 0.2), 0 6px 20px 0 rgba(76, 73, 73, 0.19);
 }
 .links{
     display:flex;
@@ -96,9 +97,10 @@ header{
     top:40px;
     height:0px;
     width:300px;
-    background:rgb(68, 66, 66);
+    background:black;
     overflow:hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 16px 0 rgba(167, 162, 162, 0.2), 0 6px 20px 0 rgba(76, 73, 73, 0.19);
 }
  #tabs:hover{
     color:rgb(138, 189, 234);
@@ -134,7 +136,9 @@ header{
     }
     #quescosmo{
       width:80%;
+      text-align: left;
     }
+    
 }
 @media(max-width:1282px){
     .dropdown_menu{
@@ -144,9 +148,33 @@ header{
 }
 
 .top-right {
+  margin-left:20px;
+  font-size: 40px;
   position: absolute;
-  top: 8px;
-  right: 16px;
+  top: 25px;
+  right: 30px;
+  color:white;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing:0.11rem;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.top-right.visible{
+  opacity:1;
+}
+.btn{
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background-color: none;
+  color: white;
+  padding: 10px 57px 10px 57px;
+  border:1px solid white;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.btn.visible{
+  opacity:1;
 }
 
 .cosmotext{
@@ -193,7 +221,12 @@ header{
     left: 16px;
     color:white;
     font-family: "Bebas Neue", sans-serif;
-    letter-spacing:0.11rem
+    letter-spacing:0.11rem;
+    transition: opacity 1s ease-in-out;
+    opacity:0;
+  }
+  .bottom-left.visible{
+    opacity:1;
   }
 #myVideo {
     right: 0;
@@ -225,8 +258,7 @@ header{
     color:white;
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
-    padding:10px 57px 10px 50px;
-    width:20px;
+    padding:10px 57px 10px 57px;
     border:1px solid white;
   }
   #knowmore:hover{
@@ -317,6 +349,10 @@ header{
   margin: 1rem;
   margin-bottom: 20px;
   border-radius: 6px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:20px;
 }
 
 .timeline-component {
@@ -324,8 +360,11 @@ header{
 }
 
 .timeline-heading{
+  font-family: "Bebas Neue", sans-serif; 
   letter-spacing:0.11rem;
-   color:rgb(138, 189, 234);
+  letter-spacing:0.11rem;
+  color:rgb(138, 189, 234);
+  font-size:25px;
 }
 @media screen and (min-width: 768px) {
   .timeline {
@@ -357,4 +396,21 @@ header{
   color:white;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing:0.11rem;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+.fade-in-word {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-word.visible {
+  opacity: 1;
 }
