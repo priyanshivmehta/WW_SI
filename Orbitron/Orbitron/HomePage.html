@@ -8,9 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body onload="myFunction()" >
+<body onload="myFunction()">
     <header  style="display:none;" id="myDiv" class="animate-bottom">
         <div class="navbar">
             <div class="logo"><a href="HomePage.html" class="logo"><img class="mylogo" src="C:\Users\PRIYANSHI MEHTA\Downloads\OrbitronLogo-removebg-preview.png" alt="ORBITRON"></a></div>
@@ -28,53 +33,99 @@
         </div>
         <div class="dropdown_menu">
             <li><a href="https://solar3d-nine.vercel.app/#" id="tabs">3D Visualization</a></li>
-            <hr style="border:0.5px solid rgb(81, 77, 77);">
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
             <li><a href="#" id="tabs">News</a></li>
-            <hr style="border:0.5px solid rgb(81, 77, 77);">
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
             <li><a href="#" id="tabs">Cosmology</a></li>
-            <hr style="border:0.5px solid rgb(81, 77, 77);">
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
             <li><a href="Quiz.html" id="tabs">Quiz</a></li>
-            <hr style="border:0.5px solid rgb(81, 77, 77);">
+            <hr style="border:0.5px solid rgba(167, 162, 162, 0.2);">
             <li><a style="height:50px;" href="#" id="tabs">Support Us</a></li>
         </div>
         <script src="script.js"></script>
         
         <div style="margin-top:100px">
+        <video autoplay muted loop id="myVideo">
+            <source src="C:\Users\PRIYANSHI MEHTA\Downloads\Our Solar System [4K] - YouTube - Google Chrome 2024-07-17 18-58-43 (online-video-cutter.com).mp4" type="video/mp4">
+          </video>
+          <div class="content">
+            <p id="credits">Credit: Anthony Mernacaj</p>
+            <h1 class="fade-in-word" style="letter-spacing:0.11rem; margin-bottom:1rem">Embark on an interstellar journey and explore our 3D solar system visualization</h1>
+            <a class="fade-in-word" href="https://solar3d-nine.vercel.app/#" id="knowmore">3D Visualization</a>
+          </div>
+        </div>
+          <br>
+          
         <!-- <video autoplay muted loop id="myVideo">
             <source src="C:\Users\PRIYANSHI MEHTA\Desktop\College\Future_Explored_2024_Space_Missions.mp4" type="video/mp4">
           </video> -->
-        <img id="images" src="C:\Users\PRIYANSHI MEHTA\Desktop\College\Website jpg\p1.jpg" alt="news">
+          <br height="10px">
+          <hr style="color:white 2px solid; margin-top:20px;">
+          <div>
+              <h1 class="cosmotext" >Know how the history of the universe led to the stars, galaxies, and other features we can observe today</h1>
+              <center><div id="quescosmo"><h2>universe</h2></div>
+              <div id="quescosmo"><h2>Cosmos</h2></div>
+              <div id="quescosmo"><h2>Constellations</h2></div></center>
+          </div>
+        
+
+          <hr style="color:white 2px solid; margin-top:50px;">
+          <!-- <img id="images" src="https://images.newscientist.com/wp-content/uploads/2024/03/27201708/SEI_197658453.jpg" alt="news">
           <div class="content">
             <p id="credits">Credit: ISRO / ESA / OneWeb India-2 / Jacob Hege</p>
             <h1 style="letter-spacing:0.11rem; margin-bottom:1rem">From a myriad of moon missions to a record-breaking sun swoop</h1>
             <a href="#" id="knowmore">Know More</a>
           </div>
-        </div>
-        <br>
-        <hr style="border:1px solid white">
-        <video autoplay muted loop id="myVideo">
+        <br> -->
+        <!-- <video autoplay muted loop id="myVideo">
             <source src="C:\Users\PRIYANSHI MEHTA\Desktop\College\Website jpg\Our Solar System [4K] - YouTube - Google Chrome 2024-07-11 19-18-48 - Trim - Trim.mp4" type="video/mp4">
           </video>
           <div class="content">
             <p id="credits">Credit: Anthony Mernacaj / Jo Blankenburg</p>
             <h1 style="letter-spacing:0.11rem; margin-bottom:1rem">Embark on an interstellar journey and explore our 3D solar system visualization</h1>
             <a href="https://solar3d-nine.vercel.app/#" id="knowmore">3D Visualization</a>
-          </div>
+          </div> -->
 
-        <hr style="color:white 2px solid; margin-top:100px;">
-        <br height="10px">
-            <div class="container">
-                <img src="https://i.redd.it/3xmcqzn18yca1.jpg" alt="Cosmo" id="images">
+        <!-- <br height="10px">
+        <hr style="color:white 2px solid; margin-top:50px;">
+        <div>
+            <h1 class="cosmotext" >Know how the history of the universe led to the stars, galaxies, and other features we can observe today</h1>
+            <div id="quescosmo"><h2>What sparked the birth of the universe?</h2></div>
+            <div id="quescosmo"><h2>What will the end of the universe look like?</h2></div>
+            <div id="quescosmo"><h2>Are we alone in this vast cosmos?</h2></div>
+            <img src="C:\Users\PRIYANSHI MEHTA\Desktop\College\Website jpg\photo-1518066000714-58c45f1a2c0a.jpg" alt="Cosmo" id="images1">
+            <div class="content">
+                <p id="credits">Credit: Photographed by James Stone james-stone.com / Getty Images</p>
+                <a href="#" id="knowmore" style="font-size: 22px;">COSMOLOGY</a>
+            </div>
+        </div> -->
+
+        <div class="container">
+                <img src="C:\Users\PRIYANSHI MEHTA\Desktop\Screenshot 2024-07-19 231232.jpg" alt="News" style="width:100%;">
+                <div  class="top-right fade-in">From a myriad of moon missions to a record-breaking sun swoop</div>
+                <a class="btn fade-in" href="#" id="knowmore">Know More</a>
+        </div>
+        <p id="credits">Credit: ISRO / ESA / OneWeb India-2 / Jacob Hege</p>
+
+        <!-- <img id="images" src="https://gizmodo.com/app/uploads/2023/06/f835e8e49f8e5f980e616c317a0786ec.jpg" alt="news">
+          <div class="content">
+            <p id="credits">Credit: ISRO / ESA / OneWeb India-2 / Jacob Hege</p>
+            <h1 style="letter-spacing:0.11rem; margin-bottom:1rem">From a myriad of moon missions to a record-breaking sun swoop</h1>
+            <a href="#" id="knowmore">Know More</a>
+          </div> -->
+        <br>
+
+            <!-- <div class="container">
+                <img src="C:\Users\PRIYANSHI MEHTA\Desktop\College\Website jpg\photo-1518066000714-58c45f1a2c0a.jpg" alt="Cosmo" id="images">
                 <div class="bottom-left">Know how the history of the universe led to the stars, galaxies, and other features we can observe today</div>
               </div>
             <div class="content">
                 <p id="credits">Credit: Photographed by James Stone james-stone.com / Getty Images</p>
                 <a href="#" id="knowmore" style="font-size: 22px;">COSMOLOGY</a>
-            </div>
-            <hr style="color:white 2px solid; margin-top:100px;">
+            </div> -->
         
         
-        <h1 id="subtopic">UPCOMING LAUNCHES:</h1>
+        <!-- <h1 id="subtopic">UPCOMING LAUNCHES:</h1>
             <table >
                 <tr>
                     <td>
@@ -99,36 +150,45 @@
                         </div>
                     </td>
                 </tr>
-            </table>
-        <hr style="color:white 2px solid; margin-top:100px;">
+            </table> -->
+        <hr style="color:white 2px solid; margin-top:20px;">
 
       
-        <h1 id="subtopic">Timeline of Space Exploration</h1>
+        <h1 id="subtopic" style="margin-left:20px;margin-top:10px">Timeline of Space Exploration</h1>
         <section class="design-section">
             <div class="timeline">
                 <div class="timeline-empty"></div>
                     <div class="timeline-middle">
                         <div class="timeline-circle"></div>
                     </div>
-                    
+
+                    <div class="fade-in">
                     <div class="timeline-component timeline-content">
                             <h3 class = "timeline-heading">Pre-Space Age (Before 1957)</h3>
                             <br>
                                 <p>• Date: Various dates before 1957</p>
+                                <br>
                                 <p>Events:</p>
                                 <p>• Early rocketry experiments by Konstantin Tsiolkovsky and Robert Goddard.</p>
                                 <p>• Formation of space agencies like NASA and USSR's Soviet space program.</p>
                                 
                     </div>
+                    </div>
+
+                    <div class="fade-in">
                             <div class="timeline-component timeline-content">
                                     <h3 class = "timeline-heading">1957 - 1969: The Space Race</h3>
                                     <br>
                                     <p>• Date: 1957 - 1969</p>
+                                    <br>
                                     <p>Events:</p>
                                     <p>• 1957: Sputnik 1 - First artificial satellite.</p>
                                     <p>• 1961: Yuri Gagarin - First human in space.</p>
                                     <p>• 1969: Apollo 11 - First manned moon landing.</p>
                             </div>
+                    </div>
+
+                    
                             <div class="timeline-middle">
                                 <div class="timeline-circle"></div>
                             </div>
@@ -141,26 +201,31 @@
                            <div class="timeline-middle">
                                <div class="timeline-circle"></div>
                            </div>
+
+                        <div class="fade-in">
                            <div class=" timeline-component timeline-content">
                             <h3 class = "timeline-heading">1970s - 1990s: Space Stations and Exploration</h3>
                             <br>
                             <p>• Date: 1970s - 1990s.</p>
+                            <br>
                             <p>Events:</p>
                             <p>• 1971: Salyut 1 - First space station.</p>
                             <p>• 1981: Space Shuttle - First reusable spacecraft.</p>
-                            <p>• 1986: Mir - Soviet/Russian space station.</p>
                             <p>•1990s: International collaborations and space probes exploring the solar system.</p>
                        </div>
-                       
+                    </div>
+
+                    <div class="fade-in">
                        <div class="timeline-component timeline-content">
                         <h3 class = "timeline-heading">2000s - Present: International Space Cooperation</h3>
                         <br>
                         <p>• Date: 2000s - Present</p>
+                        <br>
                         <p>Events:</p>
                         <p>• 2001: Chandrayaan-1 India's first lunar probe discovers water on the moon.</p>
                         <p>• 2013: Mangalyaan ISRO successfully places its Mars orbiter in Mars orbit on its first attempt.</p>
-                        <p>• 2010s: SpaceX and commercial spaceflight</p>
                         <p>• 2020s: Artemis program and return to the Moon plans.</p>
+                </div>
                 </div>
                 <div class="timeline-empty"></div>
                     <div class="timeline-middle">
@@ -169,6 +234,33 @@
                    </div>
                 
             </section>
+            <hr style="color:white 2px solid; margin-top:100px;">
+            <h1 class="fade-in-word" id="subtopic">UPCOMING LAUNCHES:</h1>
+            <table >
+                <tr>
+                    <td>
+                        <div data-aos="fade-up"
+                        data-aos-duration="3000">
+                        <div class="container">
+                        <img src="C:\Users\PRIYANSHI MEHTA\Desktop\College\Website jpg\nisar.webp" alt="NISAR" id="photo1">
+                        <div class="bottom-left fade-in"><b>NISAR (NASA-ISRO SAR)</b>
+                            <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">GSLV Mk II </p>
+                            <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;">Launch Date - January 24</p>
+                        </div>
+                        </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container">
+                            <img src="C:\Users\PRIYANSHI MEHTA\Desktop\College\Website jpg\isro-removebg-preview (4).png" alt="Gaganyaan" id="photo">
+                            <div class="bottom-left fade-in"><b>GAGANYAAN (ISRO)</b>
+                                <p style="font-size: 15px;font-family: 'PT Sans Narrow', sans-serif;font-weight: 400;font-style: normal;"">GSLV Mk III (Geosynchronous Satellite Launch Vehicle Mark III).</p>
+                            </div>
+                            
+                        </div>
+                    </td>
+                </tr>
+            </table>
             
         <footer>
         <div id ="footer1">
