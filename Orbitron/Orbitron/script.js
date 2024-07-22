@@ -19,6 +19,20 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  let lastScrollTop = 0;
+  const navbar = document.querySelector(".navbar");
+
+  window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+          navbar.classList.add("hidden");
+      } else {
+          navbar.classList.remove("hidden");
+      }
+      lastScrollTop = scrollTop;
+  });
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
