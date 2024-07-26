@@ -185,24 +185,56 @@ header{
   opacity:1;
 }
 
+.cosmoheading{
+  text-align: center;
+  opacity:0;
+}
+.cosmoheading.visible{
+  opacity:1;
+}
 .cosmotext{
   color:white;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing:0.11rem; 
   margin-bottom:1rem;
   padding:20px;
+  text-align:left;
+  padding-right:90px;
+  font-size:40px;
+}
+.cosmosubtext{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  margin-bottom:1rem;
+  text-align:left;
+  padding-right:10px;
 }
 #quescosmo{
   color:white;
   font-family: "Bebas Neue", sans-serif;
-  letter-spacing:0.11rem; 
-  gap:2rem;
   display:inline-block;
-  justify-content: center;
-  margin-left:50px;
+  margin-left:10px;
+  margin-right:50px;
   padding:20px;
-  margin-top:50px;
+  margin-top:70px;
   border-top:0.5px solid grey;
+}
+
+.para-font{
+  color:white;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top:20px;
+}
+
+@media screen and (min-width:1282px){
+  .quescosmo{
+    width:20%;
+    display:inline-block;
+  }
 }
 
 #images1{
@@ -278,11 +310,15 @@ header{
     margin-bottom:5rem;
   }
   #footer1{
+    padding-left:10px;
+    padding-right:10px;
     border-top:2px solid white;
     bottom:0;
-    padding-left:150px;
-    margin-top:150px;
-  }
+    text-align: center;
+    margin-top:120px;
+    padding-top:40px;
+    height:80px;
+    }
   .footerlist{
     display:inline-block;
     font-family: "Bebas Neue", sans-serif; 
@@ -299,8 +335,18 @@ header{
     color:rgb(138, 189, 234);
     transition-duration: 0.3s;
   }
+  #socials{
+    margin-top:5px;
+    font-size:24px;
+    color:grey;
+    padding:5px;
+  }
+  #socials:hover{
+    color:white;
+  }
+
   #subtopic{
-    height:100px;
+    height:80px;
     color:white;
     font-family: "Bebas Neue", sans-serif; 
     letter-spacing:0.11rem;
@@ -506,4 +552,10 @@ img {
 
 .fade-in-word.visible {
   opacity: 1;
+}
+
+@media screen and (max-width:650px){
+  .footer{
+    display:flex;
+  }
 }
