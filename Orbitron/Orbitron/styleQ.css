@@ -83,46 +83,46 @@ li{
      z-index:2;
  }
  .toggle_btn{
-     display:none;
-     cursor:pointer;
-     height:30px;
-     width:30px;
- 
- }
- 
- .dropdown_menu{
-    border-radius: 5px;
-     display:none;
-     position:fixed;
-     right:2rem;
-     top:60px;
-     height:0px;
-     width:300px;
-     background:black;
-     overflow:hidden;
-     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-     box-shadow: 0 8px 16px 0 rgba(167, 162, 162, 0.2), 0 6px 20px 0 rgba(76, 73, 73, 0.19);
-    }
-  #tabs:hover{
-     color:rgb(138, 189, 234);
-     text-decoration: none;
-     transition-duration: 0.2s;
- }
- .dropdown_menu.open{
-     height:240px;
- }
- .dropdown_menu li{
-     font-size:35px;
-     padding:0.7rem;
-     display:flex;
-     align-items: center;
-     justify-content:center;
- }
- .dropdown_menu{
-     z-index:1;
-     width:100%;
-     justify-content: center;
- }
+    display:none;
+    cursor:pointer;
+    height:30px;
+    width:30px;
+
+}
+
+.dropdown_menu{
+  border-radius: 5px;
+    display:none;
+    position:fixed;
+    right:2rem;
+    top:40px;
+    height:0px;
+    width:300px;
+    background:black;
+    overflow:hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 16px 0 rgba(167, 162, 162, 0.2), 0 6px 20px 0 rgba(76, 73, 73, 0.19);
+}
+ #tabs:hover{
+    color:rgb(138, 189, 234);
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+.dropdown_menu.open{
+    height:250px;
+}
+.dropdown_menu li{
+    font-size:35px;
+    padding:0.7rem;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.dropdown_menu{
+    z-index:1;
+    width:100%;
+    justify-content: center;
+}
  
  /* RESPONSIVE */
  @media(max-width:1282px){
@@ -199,3 +199,34 @@ li{
     font-weight: 400;
     font-style: normal;
 }
+#footer1{
+    border-top:2px solid white;
+    bottom:0;
+    text-align: center;
+    margin-top:120px;
+  }
+  .footerlist{
+    display:inline-block;
+    font-family: "Bebas Neue", sans-serif; 
+    font-size:23px;
+    bottom:0;
+    padding-right:80px;
+    color:white;
+    text-decoration:none;
+  }
+  #hoverfooter{
+    color:white;
+  }
+  #hoverfooter:hover{
+    color:rgb(138, 189, 234);
+    transition-duration: 0.3s;
+  }
+  #socials{
+    margin-top:5px;
+    font-size:24px;
+    color:grey;
+    padding:5px;
+  }
+  #socials:hover{
+    color:white;
+  }
