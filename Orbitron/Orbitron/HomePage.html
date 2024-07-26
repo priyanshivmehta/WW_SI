@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body onload="myFunction()">
@@ -61,11 +62,27 @@
           </video> -->
           <br height="10px">
           <hr style="color:white 2px solid; margin-top:20px;">
-          <div>
-              <h1 class="cosmotext" >Know how the history of the universe led to the stars, galaxies, and other features we can observe today</h1>
-              <center><div id="quescosmo"><h2>universe</h2></div>
-              <div id="quescosmo"><h2>Cosmos</h2></div>
-              <div id="quescosmo"><h2>Constellations</h2></div></center>
+          
+          <table>
+            <tr class="cosmoheading fade-in">
+              <td><h1 class="cosmotext">Discover the cosmic enigmas</h1></td>
+              <td><h3 class="cosmosubtext">Uncover how these celestial objects challenge our understanding of space and time, and learn about the latest discoveries and theories that continue to captivate scientists and enthusiasts alike.</h3></td>
+            </tr>
+          </table>
+
+          <div style="display:inline-block">
+              <center><div id="quescosmo" class="fade-in-word">
+                  <h2 style="letter-spacing:0.11rem;"><img src="C:\Users\PRIYANSHI MEHTA\Downloads\wormhole (5).png" style="margin-right:10px">Wormhole</h2>
+                <p class="para-font">A theoretical passage through space-time that creates shortcuts for long <br> journeys across the universe.</p>
+              </div>
+              <div id="quescosmo" class="fade-in-word">
+                <h2 style="letter-spacing:0.11rem;"><img src="C:\Users\PRIYANSHI MEHTA\Downloads\black-hole (1).png" style="margin-right:10px">Black Hole</h2>
+                <p class="para-font">A region of space where gravity is so strong that nothing, not even <br> light, can escape from it.</p>
+              </div>
+              <div id="quescosmo" class="fade-in-word">
+                <h2 style="letter-spacing:0.11rem;"><img src="C:\Users\PRIYANSHI MEHTA\Downloads\quasar.png" style="margin-right:10px">Quasars</h2>
+                <p class="para-font">Extremely luminous active galactic nuclei, powered by supermassive black holes. <br> These distant and powerful objects shine brighter than entire galaxies.</p>
+              </div></center>
           </div>
         
 
@@ -231,8 +248,14 @@
         <div id ="footer1">
             <p class="footerlist">ORBITRON © 2024 All Rights Reserved. </p>
             <p class="footerlist">Terms Of Service</p>
-            <p class="footerlist">Email: info@orbitronspace.com</p>
             <a href="#" class="footerlist" id="hoverfooter">Support Us</a>
+            <p class="footerlist">Email: info@orbitronspace.com</p>
+            <div style="display:inline-block">
+              <i class="fa fa-instagram" id="socials"></i>
+              <i class="fa fa-youtube-play" id="socials"></i>
+              <i class="fa fa-facebook-f" id="socials"></i>
+              <i class="fa-brands fa-x-twitter" id="socials"></i>
+            </div>
         </div>
         </footer>
 
@@ -242,12 +265,9 @@
             let slideIndex = 1;
             showSlides(slideIndex);
 
-// Next/previous controls
             function plusSlides(n) {
                  showSlides(slideIndex += n);
             }
-
-// Thumbnail image controls
             function currentSlide(n) {
                  showSlides(slideIndex = n);
             }
